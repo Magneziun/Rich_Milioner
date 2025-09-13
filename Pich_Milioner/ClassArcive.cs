@@ -190,6 +190,7 @@ namespace Pich_Milioner
                 }
             }
         }
+
     }
 
     public class Page_G
@@ -208,8 +209,8 @@ namespace Pich_Milioner
             while (!isSelected)
             {
                 Console.SetCursorPosition(x, y);
+
                 Console.WriteLine($"         ╔══════════════════════════════════════╗");
-                Console.WriteLine($"         ║                                      ║");
                 Console.WriteLine($"         ║                                      ║");
                 Console.WriteLine($"         ║ {(option == 1 ? color : "   ")}   1 вопрос  \u001b[31m\u001b[40m                     ║");
                 Console.WriteLine($"         ║ {(option == 2 ? color : "   ")}   2 вопрос  \u001b[31m\u001b[40m                     ║");
@@ -221,19 +222,19 @@ namespace Pich_Milioner
                 Console.WriteLine($"         ║ {(option == 8 ? color : "   ")}   8 вопрос  \u001b[31m\u001b[40m                     ║");
                 Console.WriteLine($"         ║ {(option == 9 ? color : "   ")}   9 вопрос  \u001b[31m\u001b[40m                     ║");
                 Console.WriteLine($"         ║ {(option == 10 ? color : "   ")}  10 вопрос  \u001b[31m\u001b[40m                     ║");
-                Console.WriteLine($"         ║ {(option == 12 ? color : "   ")}  11 вопрос  \u001b[31m\u001b[40m                     ║");
-                Console.WriteLine($"         ║ {(option == 13 ? color : "   ")}  12 вопрос  \u001b[31m\u001b[40m                     ║");
-                Console.WriteLine($"         ║ {(option == 14 ? color : "   ")}  13 вопрос  \u001b[31m\u001b[40m                     ║");
-                Console.WriteLine($"         ║ {(option == 15 ? color : "   ")}  14 вопрос  \u001b[31m\u001b[40m                     ║");
-                Console.WriteLine($"         ║ {(option == 16 ? color : "   ")}  15 вопрос  \u001b[31m\u001b[40m                     ║");
-                Console.WriteLine($"         ║ {(option == 17 ? color : "   ")}  16 вопрос  \u001b[31m\u001b[40m                     ║");
-                Console.WriteLine($"         ║ {(option == 18 ? color : "   ")}  17 вопрос  \u001b[31m\u001b[40m                     ║");
-                Console.WriteLine($"         ║ {(option == 19 ? color : "   ")}  18 вопрос  \u001b[31m\u001b[40m                     ║");
+                Console.WriteLine($"         ║ {(option == 11 ? color : "   ")}  11 вопрос  \u001b[31m\u001b[40m                     ║");
+                Console.WriteLine($"         ║ {(option == 12 ? color : "   ")}  12 вопрос  \u001b[31m\u001b[40m                     ║");
+                Console.WriteLine($"         ║ {(option == 13 ? color : "   ")}  13 вопрос  \u001b[31m\u001b[40m                     ║");
+                Console.WriteLine($"         ║ {(option == 14 ? color : "   ")}  14 вопрос  \u001b[31m\u001b[40m                     ║");
+                Console.WriteLine($"         ║ {(option == 15 ? color : "   ")}  15 вопрос  \u001b[31m\u001b[40m                     ║");
+                Console.WriteLine($"         ║ {(option == 16 ? color : "   ")}  16 вопрос  \u001b[31m\u001b[40m                     ║");
+                Console.WriteLine($"         ║ {(option == 17 ? color : "   ")}  17 вопрос  \u001b[31m\u001b[40m                     ║");
+                Console.WriteLine($"         ║ {(option == 18 ? color : "   ")}  18 вопрос  \u001b[31m\u001b[40m                     ║");
                 Console.WriteLine($"         ║                                      ║");
                 Console.WriteLine($"         ║                                      ║");
                 Console.WriteLine($"         ╠══════════════════════════════════════╣");
                 Console.WriteLine($"         ║                                      ║");
-                Console.WriteLine($"         ║ {(option == 4 ? color : "   ")}   ничего пока     \u001b[31m\u001b[40m                   ║");
+                Console.WriteLine($"         ║ {(option == 19? color : "   ")}   ничего пока     \u001b[31m\u001b[40m               ║");
                 Console.WriteLine($"         ║                                      ║");
                 Console.WriteLine($"         ╚══════════════════════════════════════╝\n");
 

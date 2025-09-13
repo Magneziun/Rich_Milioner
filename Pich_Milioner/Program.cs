@@ -36,7 +36,6 @@ namespace Pich_Milioner
                     sprites.Donate_screen();
                     menu_Tools.back_button(1, 1);
                     goto exit_plae;
-                    break;
                 case 4:
                     Console.Clear();
                     break;
@@ -47,13 +46,23 @@ namespace Pich_Milioner
             {
                 case 1:
                     Console.Clear();
+                    sprites.QestionsTitle();
                     page_G.Page_1();
                     break;
                 case 2:
                     Console.Clear();
                     sprites.Rules();
                     Console.ReadKey();
+                    Console.Clear();
+                    sprites.QestionsTitle();
                     page_G.Page_1();
+                    switch (page_G.option)
+                    {
+                        case 1:
+                            break;
+                        case 2:
+                            break;
+                    }
                     break;
                 case 3:
                     goto exit_plae;

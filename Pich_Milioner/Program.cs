@@ -1,33 +1,65 @@
 ﻿using System;
 using System.Runtime.InteropServices.Marshalling;
-
+using System.Security.Principal;
+using static System.Net.Mime.MediaTypeNames;
 namespace Pich_Milioner
 {
     internal class Program
     {
         static void Main()
         {
+            Page_G page_G = new Page_G();
+            GameMEnu GM = new GameMEnu();
             MainMenu MN = new MainMenu();
+            Menu_tools menu_Tools = new Menu_tools();
+            Sprites sprites = new Sprites();
             (int x, int y) = Console.GetCursorPosition();
 
-
+        exit_plae:
+            Console.Clear();
             MN.StartScreen();
             switch (MN.option)
             {
                 case 1:
-                    Console.WriteLine("hold on");
+                    Console.Clear();  
+                    GM.GmStartScreen();
                     break;
                 case 2:
                     Console.Clear();
-                    Console.WriteLine("Magnezium Dev");
-                    break;
+                    sprites.DevNAme();
+                    menu_Tools.back_button(1, 27);
+                    goto exit_plae;
+
                 case 3:
-                    Console.WriteLine("hold on");
+                    Console.Clear();
+
+                    sprites.Donate_screen();
+                    menu_Tools.back_button(1, 1);
+                    goto exit_plae;
                     break;
                 case 4:
-                    Console.WriteLine("hold on");
+                    Console.Clear();
                     break;
+
             }
+
+            switch (GM.Second_option)
+            {
+                case 1:
+                    Console.Clear();
+                    page_G.Page_1();
+                    break;
+                case 2:
+                    Console.Clear();
+                    sprites.Rules();
+                    Console.ReadKey();
+                    page_G.Page_1();
+                    break;
+                case 3:
+                    goto exit_plae;
+                
+            }
+
         }
     }
 

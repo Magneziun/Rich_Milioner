@@ -9,6 +9,7 @@ namespace Pich_Milioner
         static void Main()
         {
             Console.BackgroundColor = ConsoleColor.Black;
+            Qestoins qestoins = new Qestoins();
             Page_G page_G = new Page_G();
             GameMEnu GM = new GameMEnu();
             MainMenu MN = new MainMenu();
@@ -40,6 +41,7 @@ namespace Pich_Milioner
                     goto exit_plae;
                 case 4:
                     Console.Clear();
+                    gang = false;
                     break;
 
             }
@@ -64,8 +66,10 @@ namespace Pich_Milioner
                             case 1:
                                 Console.Clear();
                                 sprites.QestionsTitle();
+                                qestoins.qestions(1);
+                                qestoins.AnswersTab(qestoins.ans1);
                                 Console.ReadKey();
-                                gang = true;
+                                
                                 break;
                             case 2:
                                 break;

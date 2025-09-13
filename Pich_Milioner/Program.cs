@@ -57,7 +57,6 @@ namespace Pich_Milioner
                 {
                     case 1:
                         Console.Clear();
-                        Console.Clear();
                         //sprites.QestionsTitle();
                         page_G.Page_1();
                         switch (page_G.option)

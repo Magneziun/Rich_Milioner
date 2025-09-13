@@ -195,6 +195,7 @@ namespace Pich_Milioner
 
     public class Page_G
     {
+
         Sounds sounds = new Sounds();
         public int option = 0;
         public void Page_1()
@@ -204,12 +205,12 @@ namespace Pich_Milioner
             option = 1;
             bool isSelected = false;
             string color = "-> \u001b[30m\u001b[48;5;88m";
-
+            
             Console.ForegroundColor = ConsoleColor.Red;
             while (!isSelected)
             {
                 Console.SetCursorPosition(x, y);
-
+                
                 Console.WriteLine($"         ╔══════════════════════════════════════╗");
                 Console.WriteLine($"         ║                                      ║");
                 Console.WriteLine($"         ║ {(option == 1 ? color : "   ")}   1 вопрос  \u001b[31m\u001b[40m                     ║");
@@ -258,7 +259,7 @@ namespace Pich_Milioner
                         break;
                     default:
                         Console.WriteLine("           !!! ONLY ARROWS / ENTER !!!");
-                        Console.SetCursorPosition(10, 21);
+                        Console.SetCursorPosition(x, y);
                         sounds.Error();
 
                         Console.WriteLine("                            ");

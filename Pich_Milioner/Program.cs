@@ -8,13 +8,15 @@ namespace Pich_Milioner
     {
         static void Main()
         {
+            Console.BackgroundColor = ConsoleColor.Black;
             Page_G page_G = new Page_G();
             GameMEnu GM = new GameMEnu();
             MainMenu MN = new MainMenu();
+            Sounds sounds = new Sounds();
             Menu_tools menu_Tools = new Menu_tools();
             Sprites sprites = new Sprites();
             (int x, int y) = Console.GetCursorPosition();
-
+            bool gang = true;
         exit_plae:
             Console.Clear();
             MN.StartScreen();
@@ -41,32 +43,39 @@ namespace Pich_Milioner
                     break;
 
             }
-
-            switch (GM.Second_option)
+            if (GM.Second_option == 2)
             {
-                case 1:
-                    Console.Clear();
-                    sprites.QestionsTitle();
-                    page_G.Page_1();
-                    break;
-                case 2:
-                    Console.Clear();
-                    sprites.Rules();
-                    Console.ReadKey();
-                    Console.Clear();
-                    sprites.QestionsTitle();
-                    page_G.Page_1();
-                    switch (page_G.option)
-                    {
-                        case 1:
-                            break;
-                        case 2:
-                            break;
-                    }
-                    break;
-                case 3:
-                    goto exit_plae;
-                
+                sprites.Rules();
+                Console.ReadKey();
+                sounds.chose();
+                Console.Clear();
+                GM.GmStartScreen();
+            }
+            while (gang)
+            {
+                switch (GM.Second_option)
+                {
+                    case 1:
+                        Console.Clear();
+                        Console.Clear();
+                        //sprites.QestionsTitle();
+                        page_G.Page_1();
+                        switch (page_G.option)
+                        {
+                            case 1:
+                                Console.Clear();
+                                sprites.QestionsTitle();
+                                Console.ReadKey();
+                                gang = true;
+                                break;
+                            case 2:
+                                break;
+                        }
+                        break;
+                    case 3:
+                        goto exit_plae;
+
+                }
             }
 
         }

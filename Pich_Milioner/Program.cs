@@ -68,8 +68,8 @@ namespace Pich_Milioner
                                 sprites.QestionsTitle();
                                 qestoins.qestions(1);
                                 qestoins.AnswersTab(qestoins.ans1);
-                                Console.ReadKey();
-                                
+                                menu_Tools.Timer();
+
                                 break;
                             case 2:
                                 break;

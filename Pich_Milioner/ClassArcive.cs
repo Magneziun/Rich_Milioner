@@ -161,6 +161,7 @@ namespace Pich_Milioner
 
     public class Menu_tools
     {
+
         Sounds sounds = new Sounds();
         ConsoleKeyInfo key;
         public void back_button(int x, int y)
@@ -190,6 +191,13 @@ namespace Pich_Milioner
                 }
             }
         }
+
+        public bool Timer()
+        {
+
+            return false;
+        }
+
 
     }
 

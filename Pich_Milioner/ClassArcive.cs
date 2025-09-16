@@ -155,6 +155,7 @@ namespace Pich_Milioner
         {
             SPR.GmTitle1();
             gameMenu();
+            Console.WriteLine("управление стрелосками");
         }
 
     }
@@ -206,6 +207,8 @@ namespace Pich_Milioner
         Sounds sounds = new Sounds();
 
         public int option = 1;
+        public int minOpt = 1;
+        public int maxOpt = 19;
         public void Page_1()
         {
 
@@ -222,34 +225,29 @@ namespace Pich_Milioner
                 
                 Console.WriteLine($"         ╔══════════════════════════════════════╗");
                 Console.WriteLine($"         ║                                      ║");
-                Console.WriteLine($"         ║ {(option == 1 ? color : "   ")}   1 вопрос  \u001b[31m\u001b[40m                     ║"); 
-                Console.WriteLine($"         ║ {(option == 2 ? color : "   ")}   2 вопрос  \u001b[31m\u001b[40m                     ║");
-                Console.WriteLine($"         ║ {(option == 3 ? color : "   ")}   3 вопрос  \u001b[31m\u001b[40m                     ║");
-                Console.WriteLine($"         ║ {(option == 4 ? color : "   ")}   4 вопрос  \u001b[31m\u001b[40m                     ║");
-                Console.WriteLine($"         ║ {(option == 5 ? color : "   ")}   5 вопрос  \u001b[31m\u001b[40m                     ║");
-                Console.WriteLine($"         ║ {(option == 6 ? color : "   ")}   6 вопрос  \u001b[31m\u001b[40m                     ║");
-                Console.WriteLine($"         ║ {(option == 7 ? color : "   ")}   7 вопрос  \u001b[31m\u001b[40m                     ║");
-                Console.WriteLine($"         ║ {(option == 8 ? color : "   ")}   8 вопрос  \u001b[31m\u001b[40m                     ║");
-                Console.WriteLine($"         ║ {(option == 9 ? color : "   ")}   9 вопрос  \u001b[31m\u001b[40m                     ║");
-                Console.WriteLine($"         ║ {(option == 10 ? color : "   ")}  10 вопрос  \u001b[31m\u001b[40m                     ║");
-                Console.WriteLine($"         ║ {(option == 11 ? color : "   ")}  11 вопрос  \u001b[31m\u001b[40m                     ║");
-                Console.WriteLine($"         ║ {(option == 12 ? color : "   ")}  12 вопрос  \u001b[31m\u001b[40m                     ║");
-                Console.WriteLine($"         ║ {(option == 13 ? color : "   ")}  13 вопрос  \u001b[31m\u001b[40m                     ║");
-                Console.WriteLine($"         ║ {(option == 14 ? color : "   ")}  14 вопрос  \u001b[31m\u001b[40m                     ║");
-                Console.WriteLine($"         ║ {(option == 15 ? color : "   ")}  15 вопрос  \u001b[31m\u001b[40m                     ║");
-                Console.WriteLine($"         ║ {(option == 16 ? color : "   ")}  16 вопрос  \u001b[31m\u001b[40m                     ║");
-                Console.WriteLine($"         ║ {(option == 17 ? color : "   ")}  17 вопрос  \u001b[31m\u001b[40m                     ║");
-                Console.WriteLine($"         ║ {(option == 18 ? color : "   ")}  18 вопрос  \u001b[31m\u001b[40m                     ║");
+                Console.WriteLine($"         ║ {(option == 1 ? color : "   ")}   1 вопрос  \u001b[31m\u001b[40m  30 000             ║"); 
+                Console.WriteLine($"         ║ {(option == 2 ? color : "   ")}   2 вопрос  \u001b[31m\u001b[40m  30 000             ║");
+                Console.WriteLine($"         ║ {(option == 3 ? color : "   ")}   3 вопрос  \u001b[31m\u001b[40m  30 000             ║");
+                Console.WriteLine($"         ║ {(option == 4 ? color : "   ")}   4 вопрос  \u001b[31m\u001b[40m  40 000             ║");
+                Console.WriteLine($"         ║ {(option == 5 ? color : "   ")}   5 вопрос  \u001b[31m\u001b[40m  40 000             ║");
+                Console.WriteLine($"         ║ {(option == 6 ? color : "   ")}   6 вопрос  \u001b[31m\u001b[40m  40 000             ║");
+                Console.WriteLine($"         ║ {(option == 7 ? color : "   ")}   7 вопрос  \u001b[31m\u001b[40m  50 000             ║");
+                Console.WriteLine($"         ║ {(option == 8 ? color : "   ")}   8 вопрос  \u001b[31m\u001b[40m  50 000             ║");
+                Console.WriteLine($"         ║ {(option == 9 ? color : "   ")}   9 вопрос  \u001b[31m\u001b[40m  50 000             ║");
+                Console.WriteLine($"         ║ {(option == 10 ? color : "   ")}  10 вопрос  \u001b[31m\u001b[40m 60 000              ║");
+                Console.WriteLine($"         ║ {(option == 11 ? color : "   ")}  11 вопрос  \u001b[31m\u001b[40m 60 000              ║");
+                Console.WriteLine($"         ║ {(option == 12 ? color : "   ")}  12 вопрос  \u001b[31m\u001b[40m 60 000              ║");
+                Console.WriteLine($"         ║ {(option == 13 ? color : "   ")}  13 вопрос  \u001b[31m\u001b[40m 70 000              ║");
+                Console.WriteLine($"         ║ {(option == 14 ? color : "   ")}  14 вопрос  \u001b[31m\u001b[40m 70 000              ║");
+                Console.WriteLine($"         ║ {(option == 15 ? color : "   ")}  15 вопрос  \u001b[31m\u001b[40m 70 000              ║");
+                Console.WriteLine($"         ║ {(option == 16 ? color : "   ")}  16 вопрос  \u001b[31m\u001b[40m 100 000             ║");
+                Console.WriteLine($"         ║ {(option == 17 ? color : "   ")}  17 вопрос  \u001b[31m\u001b[40m 100 000             ║");
+                Console.WriteLine($"         ║ {(option == 18 ? color : "   ")}  18 вопрос  \u001b[31m\u001b[40m 100 000             ║");
                 Console.WriteLine($"         ║                                      ║");
                 Console.WriteLine($"         ║                                      ║");
                 Console.WriteLine($"         ╠══════════════════════════════════════╣");
                 Console.WriteLine($"         ║                                      ║");
-                Console.WriteLine($"         ║ {(option == 19? color : "   ")}   ничего пока     \u001b[31m\u001b[40m               ║");
-                //Console.WriteLine($"         ║                                      ║");
-                //Console.WriteLine($"         ║                                      ║");
-                //Console.WriteLine($"         ║                                      ║");
-                //Console.WriteLine($"         ║                                      ║");
-                //Console.WriteLine($"         ║                                      ║");
+                Console.WriteLine($"         ║ {(option == 19? color : "   ")}  Я наигрался       \u001b[31m\u001b[40m              ║");
                 Console.WriteLine($"         ╚══════════════════════════════════════╝\n");
 
                 key = Console.ReadKey(true);
@@ -258,11 +256,11 @@ namespace Pich_Milioner
                 switch (key.Key)
                 {
                     case ConsoleKey.DownArrow:
-                        option = (option == 19 ? 1 : option + 1);
+                        option = (option == maxOpt ? minOpt : option + 1);
                         sounds.Fast_switch();
                         break;
                     case ConsoleKey.UpArrow:
-                        option = (option == 1 ? 19 : option - 1);
+                        option = (option == minOpt ? maxOpt : option - 1);
                         sounds.Fast_switch();
                         break;
                     case ConsoleKey.Enter:

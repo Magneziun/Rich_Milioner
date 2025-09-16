@@ -21,6 +21,10 @@ namespace Pich_Milioner
         public short truAnsv3 = 3;
         public string[] ans4 = ["Пики             ", "Черви            ", "Бубны            ", "Трефы            "];
         public short truAnsv4 = 3;
+        public string[] ans5 = ["норм             ", "пойдет           ", "плюс минус       ", "хз               "];
+        public short truAnsv5 = 1;
+        public string[] ans6 = ["11               ", "10               ", "7                ", "XP               "];
+        public short truAnsv6 = 1;
         Sounds sounds = new Sounds();
         public void qestions(int optoins)
         {
@@ -37,6 +41,12 @@ namespace Pich_Milioner
                     break;
                 case 4:
                     Console.WriteLine("     какую карту я зашадал ? ");
+                    break;
+                case 5:
+                    Console.WriteLine("     хз че спросить, какая погода на улице ? ");
+                    break;
+                case 6:
+                    Console.WriteLine("     какой у меня виндовс? (у меня 11тый) ");
                     break;
             }
 

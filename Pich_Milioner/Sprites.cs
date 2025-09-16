@@ -77,10 +77,10 @@ namespace Pich_Milioner
             Console.WriteLine("         ║ доступны подсказки и прочие примочки         ║");
             Console.WriteLine("         ║ из 4х ответов только 1 является верным       ║");
             Console.WriteLine("         ║ удачной игры!                                ║");
-            Console.WriteLine("         ║                                              ║");
-            Console.WriteLine("         ║                                              ║");
-            Console.WriteLine("         ║                                              ║");
-            Console.WriteLine("         ║                                              ║");
+            Console.WriteLine("         ║ основной функционал реализован но не         ║");
+            Console.WriteLine("         ║ доконца, изза недостатка времени и           ║");
+            Console.WriteLine("         ║ учебы в университете, поэтому строго         ║");
+            Console.WriteLine("         ║ не судите :(                                 ║");
             Console.WriteLine("         ║ \u001b[38;5;234mесли вы не                            \u001b[38;5;42m       ║");
             Console.WriteLine("         ║ \u001b[38;5;234mнабиарете нужного количества очьков   \u001b[38;5;42m       ║");
             Console.WriteLine("         ║ \u001b[38;5;234mа вопросы закончатся, то вы доболвольно  \u001b[38;5;42m    ║");

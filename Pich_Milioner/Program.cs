@@ -66,7 +66,7 @@ namespace Pich_Milioner
                     case 1:
                         Console.Clear();
                         //sprites.QestionsTitle();
-                        Console.WriteLine($"\n    всего у вас {CounstPoints}  очьков ");
+                        Console.WriteLine($"\n         всего у вас {CounstPoints}  очьков ");
                         page_G.Page_1();
 
                         switch (page_G.option)
@@ -79,7 +79,8 @@ namespace Pich_Milioner
                                 menu_Tools.Timer();
                                 if (qestoins.option == qestoins.truAnsv1)
                                 {
-                                    CounstPoints++;
+                                    page_G.minOpt = 2;
+                                    CounstPoints += 30000;
                                 }
 ;
                                 break;
@@ -91,7 +92,8 @@ namespace Pich_Milioner
                                 menu_Tools.Timer();
                                 if (qestoins.option == qestoins.truAnsv2)
                                 {
-                                    CounstPoints++;
+                                    page_G.minOpt = 3;
+                                    CounstPoints += 30000;
                                 }
                                 break;
                             case 3:
@@ -102,7 +104,8 @@ namespace Pich_Milioner
                                 menu_Tools.Timer();
                                 if (qestoins.option == qestoins.truAnsv3)
                                 {
-                                    CounstPoints++;
+                                    page_G.minOpt = 4;
+                                    CounstPoints += 30000;
                                 }
                                 break;
                             case 4:
@@ -113,10 +116,39 @@ namespace Pich_Milioner
                                 menu_Tools.Timer();
                                 if (qestoins.option == qestoins.truAnsv4)
                                 {
-                                    CounstPoints++;
+                                    page_G.minOpt = 4;
+                                    CounstPoints +=40000;
                                 }
 ;
                                 ;
+                                break;
+                            case 5:
+                                Console.Clear();
+                                sprites.QestionsTitle();
+                                qestoins.qestions(5);
+                                qestoins.AnswersTab(qestoins.ans5);
+                                menu_Tools.Timer();
+                                if (qestoins.option == qestoins.truAnsv5)
+                                {
+                                    page_G.minOpt = 5;
+                                    CounstPoints += 40000;
+                                }
+                                break;
+                            case 6:
+                                Console.Clear();
+                                sprites.QestionsTitle();
+                                qestoins.qestions(6);
+                                qestoins.AnswersTab(qestoins.ans6);
+                                menu_Tools.Timer();
+                                if (qestoins.option == qestoins.truAnsv6)
+                                {
+                                    page_G.minOpt = 6;
+                                    CounstPoints += 40000;
+                                }
+                                break;
+                            case 19:
+                                Console.Clear();
+                                gang = false;
                                 break;
                         }
                         break;

@@ -38,7 +38,7 @@ namespace Pich_Milioner
                 Console.WriteLine($"         ║                                      ║");
                 Console.WriteLine($"         ║                                      ║");
                 Console.WriteLine($"         ╠══════════════════════════════════════╣");
-                Console.WriteLine($"         ║                                      ║");
+                Console.WriteLine($"         ║   стрелочки чтобы управлять          ║");
                 Console.WriteLine($"         ║ {(option == 4 ? color : "   ")}   Выйти       \u001b[31m\u001b[40m                   ║");
                 Console.WriteLine($"         ║                                      ║");
                 Console.WriteLine($"         ╚══════════════════════════════════════╝\n");

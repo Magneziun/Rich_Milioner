@@ -116,7 +116,7 @@ namespace Pich_Milioner
                                 menu_Tools.Timer();
                                 if (qestoins.option == qestoins.truAnsv4)
                                 {
-                                    page_G.minOpt = 4;
+                                    page_G.minOpt = 5;
                                     CounstPoints +=40000;
                                 }
 ;
@@ -130,7 +130,7 @@ namespace Pich_Milioner
                                 menu_Tools.Timer();
                                 if (qestoins.option == qestoins.truAnsv5)
                                 {
-                                    page_G.minOpt = 5;
+                                    page_G.minOpt = 6;
                                     CounstPoints += 40000;
                                 }
                                 break;
@@ -142,7 +142,7 @@ namespace Pich_Milioner
                                 menu_Tools.Timer();
                                 if (qestoins.option == qestoins.truAnsv6)
                                 {
-                                    page_G.minOpt = 6;
+                                    page_G.minOpt = 7;
                                     CounstPoints += 40000;
                                 }
                                 break;

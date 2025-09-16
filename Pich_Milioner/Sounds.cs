@@ -22,7 +22,7 @@ namespace Pich_Milioner
 
        public void swich()
        {
-           Console.Beep(190,300);
+           Console.Beep(190, 50);
        }
         public void Fast_switch()
         {

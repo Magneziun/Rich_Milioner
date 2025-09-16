@@ -11,8 +11,16 @@ namespace Pich_Milioner
 {
     internal class Qestoins
     {
+        public int option = 1;
+        public int CountsPoints = 0;
         public string[] ans1 = ["telegram         ", "max              ", "Whatsap          ", "Discord          "];
-
+        public short truAnsv1 = 2;
+        public string[] ans2 = ["Марк Цукерберг   ", "Билл Гейтс       ", "Павел Дуров      ", "Стив Джобс       "];
+        public short truAnsv2 = 1;
+        public string[] ans3 = ["10               ", "11               ", "12               ", "0                "];
+        public short truAnsv3 = 3;
+        public string[] ans4 = ["Пики             ", "Черви            ", "Бубны            ", "Трефы            "];
+        public short truAnsv4 = 3;
         Sounds sounds = new Sounds();
         public void qestions(int optoins)
         {
@@ -20,38 +28,33 @@ namespace Pich_Milioner
             {
                 case 1:
                     Console.WriteLine("     какой месенджер официально ворует ваши данные? \n");
-
+                    break;
+                case 2:
+                    Console.WriteLine("     Кто является официальным создателем Facebook? \u001b[38;5;236m *(запрещенная в Российсой Федерации организация)");
+                    break ;
+                case 3:
+                    Console.WriteLine("     Сколько баллов нужно поставить за эту контрольную? ");
+                    break;
+                case 4:
+                    Console.WriteLine("     какую карту я зашадал ? ");
                     break;
             }
 
         }
 
-        public void answers(int option)
-        {
-            
-        }
-
         public void AnswersTab(string[] ans)
         {
+            
             (int x, int y) = Console.GetCursorPosition();
             ConsoleKeyInfo key;
-            int option = 1;
+
             bool isSelected = false;
             string color = "-> \u001b[30m\u001b[48;5;31m";
-            string timeLen = "████████████████████████████████████████████████████████████████";
+            string timeLen = "█████████████████████████████████████████████████████████████████████████████";
             int len = 0;
             Console.ForegroundColor = ConsoleColor.DarkRed;
             while (!isSelected && len != timeLen.Length)
             {
-                (int X, int Y) = Console.GetCursorPosition();
-                if (len != timeLen.Length)
-                {
-                    if (len < timeLen.Length) len++;
-                    Console.SetCursorPosition(X, Y);
-                    Console.WriteLine(timeLen = timeLen.Remove(timeLen.Length - len, 1) + ' ');
-                    System.Threading.Thread.Sleep(100);
-                    Console.SetCursorPosition(X, Y);
-                }
                 
                 
                 Console.SetCursorPosition(x, y);
@@ -61,7 +64,16 @@ namespace Pich_Milioner
                 Console.WriteLine($"    ║                                                                           ║");
                 Console.WriteLine($"    ║ {(option == 2 ? color : "   ")}   2 {ans[1]}\u001b[31m\u001b[40m       {(option == 4 ? color : "   ")}   4 {ans[3]} \u001b[31m\u001b[40m                ║");
                 Console.WriteLine($"    ║                                                                           ║");
-                Console.WriteLine($"    ╚═══════════════════════════════════════════════════════════════════════════╝\n");
+                Console.WriteLine($"    ╚═══════════════════════════════════════════════════════════════════════════╝");
+                (int X, int Y) = Console.GetCursorPosition();
+                if (len != timeLen.Length)
+                {
+                    if (len < timeLen.Length) len++;
+                    Console.SetCursorPosition(X, Y);
+                    Console.WriteLine($"    {timeLen = timeLen.Remove(timeLen.Length - len, 1) + ' '}");
+                    System.Threading.Thread.Sleep(250);
+                    Console.SetCursorPosition(X, Y);
+                }
 
                 if (Console.KeyAvailable)
                 {
@@ -105,7 +117,6 @@ namespace Pich_Milioner
                     }
 
                 }
-
 
             }
 

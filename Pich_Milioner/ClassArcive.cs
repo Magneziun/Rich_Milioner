@@ -194,7 +194,6 @@ namespace Pich_Milioner
 
         public bool Timer()
         {
-
             return false;
         }
 
@@ -205,9 +204,11 @@ namespace Pich_Milioner
     {
 
         Sounds sounds = new Sounds();
-        public int option = 0;
+
+        public int option = 1;
         public void Page_1()
         {
+
             (int x, int y) = Console.GetCursorPosition();
             ConsoleKeyInfo key;
             option = 1;
@@ -221,7 +222,7 @@ namespace Pich_Milioner
                 
                 Console.WriteLine($"         ╔══════════════════════════════════════╗");
                 Console.WriteLine($"         ║                                      ║");
-                Console.WriteLine($"         ║ {(option == 1 ? color : "   ")}   1 вопрос  \u001b[31m\u001b[40m                     ║");
+                Console.WriteLine($"         ║ {(option == 1 ? color : "   ")}   1 вопрос  \u001b[31m\u001b[40m                     ║"); 
                 Console.WriteLine($"         ║ {(option == 2 ? color : "   ")}   2 вопрос  \u001b[31m\u001b[40m                     ║");
                 Console.WriteLine($"         ║ {(option == 3 ? color : "   ")}   3 вопрос  \u001b[31m\u001b[40m                     ║");
                 Console.WriteLine($"         ║ {(option == 4 ? color : "   ")}   4 вопрос  \u001b[31m\u001b[40m                     ║");
@@ -244,7 +245,11 @@ namespace Pich_Milioner
                 Console.WriteLine($"         ╠══════════════════════════════════════╣");
                 Console.WriteLine($"         ║                                      ║");
                 Console.WriteLine($"         ║ {(option == 19? color : "   ")}   ничего пока     \u001b[31m\u001b[40m               ║");
-                Console.WriteLine($"         ║                                      ║");
+                //Console.WriteLine($"         ║                                      ║");
+                //Console.WriteLine($"         ║                                      ║");
+                //Console.WriteLine($"         ║                                      ║");
+                //Console.WriteLine($"         ║                                      ║");
+                //Console.WriteLine($"         ║                                      ║");
                 Console.WriteLine($"         ╚══════════════════════════════════════╝\n");
 
                 key = Console.ReadKey(true);

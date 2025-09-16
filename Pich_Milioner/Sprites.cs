@@ -71,11 +71,11 @@ namespace Pich_Milioner
             Console.WriteLine("         ╔══════════════════════════════════════════════╗");
             Console.WriteLine("         ║ Привет !                                     ║");
             Console.WriteLine("         ║ В этой игре тебе предстоит заработать        ║");
-            Console.WriteLine("         ║ миллион очьков для победы. отвечайте         ║");
+            Console.WriteLine("         ║ миллион очков для победы. отвечайте          ║");
             Console.WriteLine("         ║ на вопросы разной сложности на время и       ║");
             Console.WriteLine("         ║ получайте вознаграждение, вам будут          ║");
             Console.WriteLine("         ║ доступны подсказки и прочие примочки         ║");
-            Console.WriteLine("         ║ из 4х ответов тольк 1 является верным        ║");
+            Console.WriteLine("         ║ из 4х ответов только 1 является верным       ║");
             Console.WriteLine("         ║ удачной игры!                                ║");
             Console.WriteLine("         ║                                              ║");
             Console.WriteLine("         ║                                              ║");
@@ -83,8 +83,8 @@ namespace Pich_Milioner
             Console.WriteLine("         ║                                              ║");
             Console.WriteLine("         ║ \u001b[38;5;234mесли вы не                            \u001b[38;5;42m       ║");
             Console.WriteLine("         ║ \u001b[38;5;234mнабиарете нужного количества очьков   \u001b[38;5;42m       ║");
-            Console.WriteLine("         ║ \u001b[38;5;234mа вопросы закончатся, то вы вы        \u001b[38;5;42m       ║");
-            Console.WriteLine("         ║ \u001b[38;5;234mпродаете свою душу разработчику,      \u001b[38;5;42m       ║");
+            Console.WriteLine("         ║ \u001b[38;5;234mа вопросы закончатся, то вы доболвольно  \u001b[38;5;42m    ║");
+            Console.WriteLine("         ║ \u001b[38;5;234mотдаете свою душу разработчику,       \u001b[38;5;42m       ║");
             Console.WriteLine("         ║ \u001b[38;5;234mбез шанса вернуть её обратно.         \u001b[38;5;42m       ║");
             Console.WriteLine("         ║                                              ║");
             Console.WriteLine("         ╚══════════════════════════════════════════════╝");

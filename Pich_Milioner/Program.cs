@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Runtime.InteropServices.Marshalling;
+using System.Security.Cryptography.X509Certificates;
 using System.Security.Principal;
 using static System.Net.Mime.MediaTypeNames;
 namespace Pich_Milioner
 {
     internal class Program
     {
+
         static void Main()
         {
+            int CounstPoints = 0;
             Console.BackgroundColor = ConsoleColor.Black;
             Qestoins qestoins = new Qestoins();
             Page_G page_G = new Page_G();
@@ -15,10 +18,13 @@ namespace Pich_Milioner
             MainMenu MN = new MainMenu();
             Sounds sounds = new Sounds();
             Menu_tools menu_Tools = new Menu_tools();
+            Program prg = new Program();
+
             Sprites sprites = new Sprites();
             (int x, int y) = Console.GetCursorPosition();
             bool gang = true;
-        exit_plae:
+            
+            exit_plae:
             Console.Clear();
             MN.StartScreen();
             switch (MN.option)
@@ -60,7 +66,9 @@ namespace Pich_Milioner
                     case 1:
                         Console.Clear();
                         //sprites.QestionsTitle();
+                        Console.WriteLine($"\n    всего у вас {CounstPoints}  очьков ");
                         page_G.Page_1();
+
                         switch (page_G.option)
                         {
                             case 1:
@@ -69,9 +77,46 @@ namespace Pich_Milioner
                                 qestoins.qestions(1);
                                 qestoins.AnswersTab(qestoins.ans1);
                                 menu_Tools.Timer();
-
+                                if (qestoins.option == qestoins.truAnsv1)
+                                {
+                                    CounstPoints++;
+                                }
+;
                                 break;
                             case 2:
+                                Console.Clear();
+                                sprites.QestionsTitle();
+                                qestoins.qestions(2);
+                                qestoins.AnswersTab(qestoins.ans2);
+                                menu_Tools.Timer();
+                                if (qestoins.option == qestoins.truAnsv2)
+                                {
+                                    CounstPoints++;
+                                }
+                                break;
+                            case 3:
+                                Console.Clear();
+                                sprites.QestionsTitle();
+                                qestoins.qestions(3);
+                                qestoins.AnswersTab(qestoins.ans3);
+                                menu_Tools.Timer();
+                                if (qestoins.option == qestoins.truAnsv3)
+                                {
+                                    CounstPoints++;
+                                }
+                                break;
+                            case 4:
+                                Console.Clear();
+                                sprites.QestionsTitle();
+                                qestoins.qestions(4);
+                                qestoins.AnswersTab(qestoins.ans4);
+                                menu_Tools.Timer();
+                                if (qestoins.option == qestoins.truAnsv4)
+                                {
+                                    CounstPoints++;
+                                }
+;
+                                ;
                                 break;
                         }
                         break;
@@ -82,6 +127,7 @@ namespace Pich_Milioner
             }
 
         }
+        
     }
 
 
